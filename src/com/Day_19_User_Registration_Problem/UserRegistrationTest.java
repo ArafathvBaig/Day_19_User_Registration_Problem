@@ -41,7 +41,7 @@ class UserRegistrationTest
 	void getThePassWordAndCheckWhetherTheRegexCodeIsCorrectOrNot() 
 	{
 		UserRegistration ur = new UserRegistration();
-		String password = "Arafathbaig1997";
+		String password = "Arafathbaig1997$";
 		boolean check = ur.passwordCheck(password);
 		Assert.assertEquals(true, check);
 	}
