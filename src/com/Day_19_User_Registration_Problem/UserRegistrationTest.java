@@ -29,4 +29,26 @@ class UserRegistrationTest
 		boolean check = ur.emailCheck(email);
 		Assert.assertEquals(true, check);
 	}
+	@Test
+	void getThePhoneNumberAndCheckWhetherTheRegexCodeIsCorrectOrNot() 
+	{
+		UserRegistration ur = new UserRegistration();
+		String phone = "91 9115513683";
+		boolean check = ur.phoneNumberCheck(phone);
+		Assert.assertEquals(true, check);
+	}
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
