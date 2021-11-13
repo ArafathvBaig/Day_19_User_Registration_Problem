@@ -24,18 +24,23 @@ public class UserRegistration
 		boolean check = Pattern.matches("(([0-9]{2}) ([0-9]{10}))", phone);
 		return check;
 	}	
+	public boolean passwordCheck(String password)
+	{
+		boolean check = Pattern.matches("(([a-z]{8,}))", password);
+		return check;
+	}	
 	public static void main(String[] args)
 	{
 		UserRegistration ur = new UserRegistration();
-		String phone = "91 9115513683";
-		boolean check = ur.phoneNumberCheck(phone);
+		String password = "abcdefgh";
+		boolean check = ur.passwordCheck(password);
 		if(check == true)
 		{
-			System.out.println("Phone Number is Correct: "+phone);
+			System.out.println("Password is Correct: "+password);
 		}
 		else
 		{
-			System.out.println("Phone Number is InCorrect");
+			System.out.println("Password is InCorrect");
 		}
 	}
 }

@@ -37,6 +37,14 @@ class UserRegistrationTest
 		boolean check = ur.phoneNumberCheck(phone);
 		Assert.assertEquals(true, check);
 	}
+	@Test
+	void getThePassWordAndCheckWhetherTheRegexCodeIsCorrectOrNot() 
+	{
+		UserRegistration ur = new UserRegistration();
+		String password = "abcdefgh";
+		boolean check = ur.passwordCheck(password);
+		Assert.assertEquals(true, check);
+	}
 }
 
 
