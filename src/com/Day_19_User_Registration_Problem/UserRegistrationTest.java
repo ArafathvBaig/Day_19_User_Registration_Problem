@@ -21,4 +21,12 @@ class UserRegistrationTest
 		boolean check = ur.lastNameCheck(lastName);
 		Assert.assertEquals(true, check);
 	}
+	@Test
+	void getTheEmailAndCheckWhetherTheRegexCodeIsCorrectOrNot() 
+	{
+		UserRegistration ur = new UserRegistration();
+		String email = "abc.XYZ@bl.co.in";
+		boolean check = ur.emailCheck(email);
+		Assert.assertEquals(true, check);
+	}
 }
