@@ -1,9 +1,6 @@
 package com.Day_19_User_Registration_Problem;
 
-import static org.junit.jupiter.api.Assertions.*;
-
 import org.junit.Assert;
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 class UserRegistrationTest 
@@ -14,6 +11,14 @@ class UserRegistrationTest
 		UserRegistration ur = new UserRegistration();
 		String firstName = "Arafath";	
 		boolean check = ur.firstNameCheck(firstName);
+		Assert.assertEquals(true, check);
+	}
+	@Test
+	void getTheLastNameAndCheckWhetherTheRegexCodeIsCorrectOrNot() 
+	{
+		UserRegistration ur = new UserRegistration();
+		String lastName = "Arafath";	
+		boolean check = ur.lastNameCheck(lastName);
 		Assert.assertEquals(true, check);
 	}
 }
