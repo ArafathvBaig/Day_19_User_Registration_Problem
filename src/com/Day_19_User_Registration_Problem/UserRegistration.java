@@ -6,7 +6,7 @@ public class UserRegistration
 {
 	public boolean firstNameCheck(String firstName)
 	{
-		boolean check = Pattern.matches("([A-Z][a-z]{3,})", firstName);
+		boolean check = Pattern.matches("([A-Z][a-z]{2,})", firstName);
 	    return check;
 	}
 	public static void main(String[] args)
