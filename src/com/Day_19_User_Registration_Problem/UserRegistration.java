@@ -26,13 +26,13 @@ public class UserRegistration
 	}	
 	public boolean passwordCheck(String password)
 	{
-		boolean check = Pattern.matches("(([A-Z]{1})([a-z]{7,}))", password);
+		boolean check = Pattern.matches("(([A-Z]{1})([a-z]{7,})([0-9]{1,}))", password);
 		return check;
 	}	
 	public static void main(String[] args)
 	{
 		UserRegistration ur = new UserRegistration();
-		String password = "Abcdefgh";
+		String password = "Arafathbaig1997";
 		boolean check = ur.passwordCheck(password);
 		if(check == true)
 		{
